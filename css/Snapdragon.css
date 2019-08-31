@@ -1,0 +1,108 @@
+.tilLeft{
+	width: 550px;
+	display: inline-block;
+	
+}
+.tilRight{
+	width: 400px;
+	display: inline-block;
+	padding-top: -100px;
+	
+}
+
+.tilRight>img{
+	
+	vertical-align:0;
+	
+}
+.til{
+	text-align: center;
+}
+.pic1{height: 650px;
+	width: 100%;
+	background-image: url(../img/background-image-1.jpg);
+	padding: 200px;
+	background-size: 100%;
+	background-position:center;
+}
+.pic1>div{
+	color: #FFFFFF;
+	width: 600px;
+	margin-left: 100px;
+	margin-left: 100px;
+}
+
+.pic2{
+	position: relative;
+	height: 650px;
+	width: 100%;
+	background-image:url(../img//background-image-2.jpg);
+	background-size: 100%;
+	background-position:center;
+}
+.pic2>div{
+	color: #FFFFFF;
+	position: absolute;
+	right: 20px;
+	top: 100px;
+	width: 400px;
+}
+.pic3{height: 650px;
+	width: 100%;
+	background-image: url(../img/background-image-3_1_2.png);
+	padding: 200px;
+	background-size: 100%;
+	background-position:center;
+}
+.pic3>div{
+	color: #FFFFFF;
+	width: 600px;
+	margin-left: 100px;
+	margin-left: 100px;
+}
+.pic4{
+	position: relative;
+	height: 650px;
+	width: 100%;
+	background-image:url(../img/background-image-4.jpg);
+	background-size: 100%;
+	background-position:center;
+}
+.pic4>div{
+	position: absolute;
+	color: #FFFFFF;
+	top: 100px;
+	right: 20px;
+	width: 400px;
+}
+.pic5{height: 650px;
+	width: 100%;
+	background-image: url(../img/background-image-5.jpg);
+	padding: 200px;
+	background-size: 100%;
+	background-position:center;
+}
+.pic5>div{
+	color: #FFFFFF;
+	width: 600px;
+	margin-left: 100px;
+	margin-left: 100px;
+}
+.carousel{
+	height: 500px;
+	background: #DDDDDD;
+}
+.carousel-caption{
+	left: 0;
+	width: 100%;
+	
+}
+
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+	padding: -50px;
+	display: inline-block;
+}
+.item.active.text-center{
+	margin-top: 50px
+}

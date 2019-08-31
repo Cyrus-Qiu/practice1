@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,shrink-to-fit=no">
+		<title></title>
+
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/font-awesome.min.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="../css/bootstrap-select.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/demo.css">
+		<style type="text/css">
+			.leftbox {
+				width: 50%;
+				height: 1000px;
+				background: #3253dc;
+				float: left;
+			}
+			
+			.leftbox .logo {
+				padding-left: 25px;
+				padding-top: 35px;
+			}
+			
+			.leftbox .leftlist {
+				height: auto;
+				padding-top: 170px;
+			}
+			
+			.leftbox .img1 {
+				margin-left: 3rem;
+			}
+			
+			.leftbox .leftlist h1 {
+				font-size: 50px;
+				color: #fff;
+				padding-left: 3rem;
+			}
+			
+			.leftbox .leftlist h3 {
+				width: auto;
+				font-size: 16px;
+				color: #fff;
+				padding-left: 3rem;
+				padding-right: 3rem;
+			}
+			
+			.leftbox .leftlist .wz1 {
+				width: auto;
+				height: auto;
+				margin-top: 1rem;
+				padding-left: 3rem;
+				padding-right: 3rem;
+			}
+			
+			.leftbox .leftlist span {
+				font-size: 12px;
+				color: #fff;
+			}
+			
+			.leftbox .bottomwz {
+				margin: 0 auto;
+				width: auto;
+				padding-top: 200px;
+				padding-left: 2rem;
+				padding-right: 2rem;
+			}
+			
+			.leftbox .bottomwz .col-md-3 {
+				font-size: 12px;
+				text-align: center;
+			}
+			
+			.leftbox .bottomwz .col-md-3 a {
+				color: #9eb9fe;
+			}
+			
+			.leftbox .bottomwz p {
+				font-size: 12px;
+				color: #6b89f7;
+				padding-left: 10px;
+				margin-top: 20px;
+			}
+			
+			.rightbox {
+				width: 50%;
+				height: 1000px;
+				float: right;
+			}
+			
+			.registerlist {
+				width: 658px;
+				height: 665px;
+				margin-top: 125px;
+			}
+			
+			.registerlist .zhuceid {
+				width: 527px;
+				height: 39px;
+				margin-left: 131px;
+			}
+			
+			.registerlist .zhuceid h2 {
+				font-size: 38px;
+			}
+			
+			.registerlist .wz2 {
+				width: 527px;
+				height: 39px;
+				margin-left: 131px;
+				margin-top: 20px;
+			}
+			
+			.registerlist .wz2 p {
+				font-size: 18px;
+			}
+			
+			.registerlist table {
+				width: 400px;
+				height: 382px;
+				margin-left: 131px;
+			}
+			
+			.textshuru {
+				width: 400px;
+				height: 44px;
+				border-radius: 10px;
+				border: 1px solid #e1e1e1;
+			}
+			
+			.texttable p {
+				font-size: 12px;
+				color: #e1e1e1;
+				margin-top: 5px;
+			}
+			
+			.texttable span {
+				position: relative;
+				top: 35px;
+				left: 2px;
+				font-size: 20px;
+				color: #ababa9;
+				background: #fff;
+				transition: all 0.3s;
+			}
+			
+			#suanfa {
+				width: 400px;
+				height: 44px;
+				border-radius: 10px;
+				border: 1px solid #e1e1e1;
+			}
+			
+			.country {
+				padding-top: -40px;
+			}
+			
+			.loginbtn {
+				margin-left: 131px;
+				margin-top: 35px;
+				width: 400px;
+				height: 55px;
+				border-radius: 30px;
+				background: #b7c3f3;
+				cursor: pointer;
+			}
+			
+			.loginbtn p {
+				font-size: 20px;
+				text-align: center;
+				padding-top: 15px;
+			}
+			
+			.loginbtn a {
+				color: #fff;
+			}
+			
+			.btncontinue {
+				width: 100px;
+				height: 55px;
+				border-radius: 30px;
+				border: 0 solid;
+				background: #3253dc;
+				color: #fff;
+				font-size: 18px;
+				text-align: center;
+			}
+			
+			.logintext {
+				width: 270px;
+				margin-left: 131px;
+				margin-top: 20px;
+				font-size: 18px;
+			}
+			
+			#cbagree {
+				width: 20px;
+				height: 20px;
+			}
+			
+			#btnTop {
+				display: none;
+				position: fixed;
+				bottom: 20px;
+				right: 30px;
+				z-index: 99;
+				border: none;
+				outline: none;
+				background-color: #f3f3f3;
+				color: #000;
+				cursor: pointer;
+				padding: 15px;
+				border-radius: 50%;
+			}
+			
+			#btnTop:hover {
+				background-color: #f3f3f3;
+			}
+			
+			@media (min-width: 768px) {
+				.bottomwz .col-sm-3 {
+					width: auto;
+				}
+			}
+			input[type=submit]{
+				background: none;
+				color: #000;
+				border: none;
+			}
+			input[type=submit]:hover{
+				color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="body-box">
+			<div class="leftbox">
+				<div class="logo">
+					<img src="../img/3company1.jpg" />
+				</div>
+				<div class="leftlist">
+					<div class="img1">
+						<img src="../img/3company2.jpg" />
+					</div>
+					<div>
+						<a href="company.html" style="text-decoration: none;">
+							<h1>高通ID</h1></a>
+					</div>
+					<div>
+						<h3>使用Qualcomm ID，您可以访问产品信息，例如文档，工具，软件，支持社区等。</h3>
+					</div>
+					<div class="wz1">
+						<span>
+						注意：某些产品套件，工具和材料可能要求您在访问或使用这些项目之前接受其他条款和条件。
+					</span>
+					</div>
+				</div>
+				<div class="bottomwz">
+					<div class="row-box text-center">
+						<div class="col-md-3 col-sm-3">
+							<a href="#">使用条款</a>
+						</div>
+						<div class="col-md-3 col-sm-3">
+							<a href="#">隐私</a>
+						</div>
+						<div class="col-md-3 col-sm-3">
+							<a href="#">Cookie政策</a>
+						</div>
+						<div class="col-md-3 col-sm-3">
+							<a href="companyagency.html">联系我们</a>
+						</div>
+					</div>
+
+					<p>© 2019 Qualcomm Technologies，Inc。和/或其附属公司</p>
+				</div>
+			</div>
+
+			<div class="rightbox">
+				<div class="registerlist">
+					<div class="zhuceid">
+						<h2>注册</h2>
+					</div>
+					<div class="wz2">
+						<p>验证帐户后，您的Qualcomm ID将成为您的电子邮件地址。</p>
+					</div>
+					<div>
+						<form id="form1" name="form1" method="" action="post">
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="texttable">
+										<span id="nameone">您的姓氏*&nbsp;&nbsp;&nbsp;&nbsp;</span>
+										<input type="text" onmousedown="down1()" required class="textshuru" name="username1" onblur="checkusername1()" placeholder="First Name" id="addusername1" />
+									</td>
+								</tr>
+								<tr>
+									<td class="texttable">
+										<span id="nametwo">您的名字*</span>
+										<input type="text" onmousedown="down2()" required class="textshuru" name="username2" onblur="checkusername2()" placeholder="Last Name" id="addusername2" />
+									</td>
+								</tr>
+								<tr>
+									<td class="texttable">
+										<span id="namethr">电子邮箱*</span>
+										<input type="text" onmousedown="down3()" required class="textshuru" name="email" onblur="checkemail()" placeholder="Email" id="addemail" />
+										<br />
+										<p>使用公司电子邮件地址</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="country">
+										<select class="selectpicker countrypicker" data-live-search="true" data-default="China" data-flag="true"></select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" name="" id="cbagree" value="" />
+										<span>
+										我同意
+										<a href="">Qualcomm使用条款隐私政策</a>
+										和
+										<a href="">隐私政策</a>
+									</span>
+									</td>
+								</tr>
+								
+							</table>
+							<div class="loginbtn" id="sss" onmouseover="over()" onmouseout="out()">
+									<td>										
+										<p>
+											<input type="submit" id="" name="" value="继续" />
+										</p>
+									</td>
+								</div>
+						</form>
+					</div>
+
+					<div class="logintext">
+						<span>
+						已经拥有Qualcomm ID？
+					</span>
+						<span>
+						<a href="">登录</a>
+					</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<button onclick="returnTop()" id="btnTop" title="">
+			<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+		</button>
+
+		<script src="../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap-select.min.js"></script>
+		<script src="../js/countrypicker.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#body-box').css('height', '$(document).height()');
+			})
+
+			function checkusername1() {
+				var form = document.getElementById("form1");
+				var username1 = form.username1.value.length;
+				if(username1 < 1 || username1 > 6) {
+					addusername1.style.borderColor = "red";
+					return false;
+				} else {
+					addusername1.style.borderColor = "green";
+					return true;
+				}
+			}
+
+			function checkusername2() {
+				var form = document.getElementById("form1");
+				var username2 = form.username2.value.length;
+				if(username2 < 1 || username2 > 6) {
+					addusername2.style.borderColor = "red";
+					return false;
+				} else {
+					addusername2.style.borderColor = "green";
+					return true;
+				}
+			}
+
+			function checkemail() {
+				var form = document.getElementById("form1");
+				var email = /^[A-Za-z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+				if(!email.test(form.email.value)) {
+					addemail.style.borderColor = "red";
+					return false;
+				} else {
+					addemail.style.borderColor = "green";
+					return true;
+				}
+			}
+
+			function over() {
+				var x = document.getElementById("sss").style.backgroundColor = "#3254dc";
+			}
+
+			function out() {
+				var x = document.getElementById("sss").style.backgroundColor = "#b7c3f3";
+			}
+
+			function down1() {
+				var x = document.getElementById("nameone").style.fontSize = "12px";
+				var x = document.getElementById("nameone").style.top = "19px";
+				var x = document.getElementById("nameone").style.left = "6px";
+			}
+
+			function down2() {
+				var x = document.getElementById("nametwo").style.fontSize = "12px";
+				var x = document.getElementById("nametwo").style.top = "19px";
+				var x = document.getElementById("nametwo").style.left = "6px";
+			}
+
+			function down3() {
+				var x = document.getElementById("namethr").style.fontSize = "12px";
+				var x = document.getElementById("namethr").style.top = "19px";
+				var x = document.getElementById("namethr").style.left = "6px";
+			}
+
+			window.onscroll = function() {
+				scrollFunction()
+			};
+
+			function scrollFunction() {
+				console.log(121);
+				if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					document.getElementById("btnTop").style.display = "block";
+				} else {
+					document.getElementById("btnTop").style.display = "none";
+				}
+			}
+
+			function returnTop() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
+	</body>
+
+</html>

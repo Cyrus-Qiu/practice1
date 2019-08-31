@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/pubCss.css"/>
+		<style type="text/css">
+			.box1 {
+				width: 100%;
+				height: 586px;
+				background-image: url(../img/2company1.jpg);
+			}
+			.row{
+				margin-left: 0;
+				margin-right:0 ;
+			}
+			.box1 .world1 {
+				width: 900px;
+				height: 70px;
+				padding-top: 250px;
+				margin: 0 auto;
+			}
+			
+			.box1 .world1 h2 {
+				font-size: 70px;
+				font-family: "黑体";
+				color: #fff;
+			}
+			
+			.box2 {
+				width: 100%;
+				height: 395px;
+				background-image: url(../img/2company2.jpg);
+			}
+			
+			.box2 .world2 {
+				width: 1200px;
+				height: 145px;
+				margin: 0 auto;
+				padding-top: 100px;
+			}
+			
+			.box2 .world2 h2 {
+				font-size: 50px;
+				text-align: center;
+			}
+			
+			.box2 .world2 .world22 {
+				width: 780px;
+				margin: 0 auto;
+			}
+			
+			.box2 .world2 p {
+				font-size: 22px;
+				text-align: center;
+				color: #777a7d;
+			}
+			
+			.box3 {
+				width: 100%;
+				height: auto;
+			}
+			
+			.box3 .world3 {
+				width: 1200px;
+				padding-top: 150px;
+				margin: 0 auto;
+			}
+			
+			.box3 .world3 h2 {
+				font-size: 48px;
+				font-weight: bold;
+			}
+			
+			.box3 .world3 p {
+				font-size: 20px;
+				color: #777a7d;
+				font-weight: bold;
+				width: ;
+			}
+			
+			.box4 {
+				width: 100%;
+				height: 470px;
+				background: #fafafa;
+			}
+			
+			.box4 .world4 {
+				width: 1200px;
+				height: 325px;
+				margin: 0 auto;
+			}
+			.box4 .world4 .col-md-3{
+				width: 280px;
+				height: 325px;
+				margin: 20px 10px 0 10px;
+				background: #fff;
+				cursor: pointer;
+			}
+			.box4 .world4 .col-md-3 span{
+				font-size: 14px;
+				color: #3253dc;
+				font-weight: bold;
+				margin-left: 20px;
+			}
+			.box4 .world4 .col-md-3 h2{
+				font-size: 30px;
+				margin-left: 20px;
+				font-weight: none;
+			}
+			.box4 .world4 .col-md-3 p{
+				font-size: 14px;
+				color: #adadad;
+				padding-top: 50px;
+				margin-left: 20px;
+				font-weight: bold;
+			}
+			.box4 .world4 .col-md-3 li{
+				font-size: 14px;
+				margin-left: 20px;
+				list-style: none;
+			}
+			.lgwz{
+				width: 100%;
+				height: 100px;
+				background: #fafafa;
+			}
+			.lgwz .lgwz2{
+				width: 1200px;
+				margin:0 auto;
+			}
+			.lgwz .lgwz2 p{
+				font-size: 30px;
+				font-weight: bold;
+				line-height: 50px;
+			}
+			.box5{
+				width: 100%;
+				height: 380px;
+				background: #fafafa;
+			}
+			.box5 .world5{
+				width: 1200px;
+				height: 280px;
+				margin: 0 auto;
+			}
+			.box5 .world5 h2{
+				font-size: 50px;
+			}
+			.box5 .world5 p{
+				font-size: 22px;
+				color: #777a7d;
+			}
+			
+			.box6{
+				width: 100%;
+				height: 380px;
+				background: #292f32;
+			}
+			.box6 .world6{
+				width: 780px;
+				height: 160px;
+				margin: 0 auto;
+			}
+			.box6 .world6 p{
+				font-size: 36px;
+				color: #fff;
+				text-align: center;
+				font-weight: bold;
+				padding-bottom: 20px;
+			}
+			.box6 .world62{
+				width: 780px;
+				height: 80px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			.box6 .world62 .btn{
+				height: 50px;
+				width: 200px;
+				background: #3253dc;
+				border-radius: 25px;
+				font-size: 18px;
+				font-weight: bold;
+			}
+			.box6 .world62 a{
+				color: #fff;
+				text-decoration: none;
+			}
+			
+			
+			
+			
+			footer {
+				width: 100%;
+				border-top: 1px solid #666;
+			}
+			
+			footer>.box {
+				margin-top: 32px;
+			}
+			footer>.box .rightwz a{
+				color: #7f8082;
+				margin-right: 20px;
+				font-size: 14px;
+			}
+			
+			#btnTop {
+				display: none;
+				position: fixed;
+				bottom: 20px;
+				right: 30px;
+				z-index: 99;
+				border: none;
+				outline: none;
+				background-color: #f3f3f3;
+				color: #000;
+				cursor: pointer;
+				padding: 15px;
+				border-radius: 50%;
+			}
+			
+			#btnTop:hover {
+				background-color: #f3f3f3;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		
+		<header>
+			<div class="box">
+				<div class="menu">
+					<img src="../img/menu.PNG" id="menb" style="height: 26px;width: 26px;" data-zt = "0"/>
+					<div>
+						<div class="melist">
+							<div class="nav">
+								<a href="../html/products.html">产品</a>
+								<a href="../html/one.html">解决方案</a>
+								<a href="../index.html">支持</a>
+								<a href="../html/company.html">公司</a>
+							</div>
+							
+						</div>
+						<div class="log">
+							<h4><img src="../img/login.PNG" />登录您的Qualcomm帐户。</h4>
+							<a href="../html/login.html" class="btn" id="logbn">登录</a>
+							<p>没有帐户？ <a href="../html/companyregister.html">创建一个</a></p>
+								
+						</div>
+					</div>
+				</div>
+				<div class="logo">
+					<img src="../img/XM logo.PNG" />
+				</div>
+				<div class="nav">
+					<a href="../html/products.html">产品</a>
+					<a href="../html/one.html">解决方案</a>
+					<a href="../index.html">支持</a>
+					<a href="../html/company.html">公司</a>
+				</div>
+				<div class="pop">
+					<div class="log">
+						<img src="../img/login.PNG" id="login" style="cursor:pointer;" data-zt = "0" />
+						<div id="logfr">
+							<h4 style="font-size: 20px;">登录您的Qualcomm帐户。</h4>
+							<a href="../html/login.html" class="btn" id="logbn">登录</a>
+							<p>没有帐户？ <a href="../html/companyregister.html">创建一个</a></p>
+						</div>
+					</div>
+					<div style="cursor:pointer;">
+						<img src="../img/find.PNG" id="findbtn" />
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="box1">
+			<div class="world1">
+				<h2>以创新，为世界带来改变</h2>
+			</div>
+		</div>
+
+		<div class="box2">
+			<div class="world2">
+				<div class="world22 ">
+					<h2>“改变世界”正是我们工作的一部分</h2>
+					<p>加入 Qualcomm，您将有机会参与研发改变世界的新技术。 数千专业人员努力工作，在人类进步的过程中留下自己的印记。 听上去很宏大，但你只需填写一份简单的求职申请即可。 没错，就这么简单。</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="box3">
+			<div class="world3">
+				<div class="row">
+					<div class="col-md-6 text-center">
+						<h2>谈到我们的价值观，人才是我们最看重的资源</h2>
+						<p>为了营建一个积极发明创新的环境，我们必须创造良好的工作环境。 我们的员工对于创造适合自身需求的工作环境有很大的话语权。 从员工自己制造电动车的俱乐部，到启发下一代发明家的项目，我们始终注重营造孕育成功的文化。</p>
+					</div>
+					<div class="col-md-6 text-center">
+						<img src="../img/2company3.jpg" style="max-width: 500px;"/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="lgwz">
+			<div class="lgwz2">
+				<p><br />Qualcomm 最新职位</p>
+			</div>
+			
+		</div>
+		
+		<div class="box4">
+			<div class="world4">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<div class="row">
+								<div class="col-md-3 col-xs-3">
+									<br />
+									<span>Engineering - Software</span>
+									<h2>Graphics<br />Software<br />Engineer</h2>
+									<p> AUG 8,2019</p>
+									<li>CN-Shanghai</li>
+								</div>
+								<div class="col-md-3 col-xs-3">
+									<br />
+									<span>Engineering - Software</span>
+									<h2>Graphics<br />Software<br />Engineer</h2>
+									<p> AUG 8,2019</p>
+									<li>CN-Shanghai</li>
+								</div>
+								<div class="col-md-3 col-xs-3">
+									<br />
+									<span>Engineering - Software</span>
+									<h2>Camera SW<br />engineer,Sr-<br />Beijing</h2>
+									<p> AUG 8,2019</p>
+									<li>CN-Beijing</li>
+								</div>
+								<div class="col-md-3 col-xs-3">
+									<br />
+									<span>Engineering - Software</span>
+									<h2>Machine<br />Learing<br />Software</h2>
+									<p> AUG 6,2019</p>
+									<li>CN-Shenzhen</li>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="row">
+								<div class="col-md-3 col-xs-3">
+									<br />
+									<span>Engineering - Hardware</span>
+									<h2>Senior<br />Physical<br />Dseign Engineer</h2>
+									<p> AUG 5,2019</p>
+									<li>CN-Shanghai</li>
+								</div>
+								<div class="col-md-3 col-xs-3">
+									<br />
+									<span>Engineering - Hardware</span>
+									<h2>Senior<br />Physical<br />Dseign Engineer</h2>
+									<p> AUG 5,2019</p>
+									<li>CN-Shanghai</li>
+								</div>
+								<div class="col-md-3 col-xs-3">
+									<br />
+									<span>Sales</span>
+									<h2>Sr.<br />Mananger<br />Manager(IOT)</h2>
+									<p> AUG 5,2019</p>
+									<li>CN-Shenzhen</li>
+								</div>
+								<div class="col-md-3 col-xs-3">
+									<br />
+									<span>Technical Support</span>
+									<h2>Customer Service<br />Specialist</h2>
+									<p> AUG 8,2019</p>
+									<li>CN-Shenzhen</li>
+								</div>
+							</div>
+						</div>
+						
+						<div class="item">
+							<div class="row">
+								<div class="col-md-3 col-xs-3">
+									<br />
+									<span>Engineering - Software</span>
+									<h2>Senior PhysicalStorage<br />Customer</h2>
+									<p> JUL 30,2019</p>
+									<li>CN-Shenzhen</li>
+								</div>
+								<div class="col-md-3 col-xs-3">
+									<br />
+									<span>Engineering - Test</span>
+									<h2>HW Systems<br />Engineer<br />Customer</h2>
+									<p> JUL 30,2019</p>
+									<li>CN-Shanghai</li>
+								</div>
+								<div class="col-md-3 col-xs-3">
+									<br />
+									<span>Engineering - Software</span>
+									<h2>BSP<br />Product<br />Engineer</h2>
+									<p> JUL 30,2019</p>
+									<li>CN-Shenzhen</li>
+								</div>
+								<div class="col-md-3 col-xs-3">
+									<br />
+									<span>Technical Support</span>
+									<h2>Customer<br />Specialist<br />Design Engineer</h2>
+									<p> JUL 30,2019</p>
+									<li>CN-Shanghai</li>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="box5">
+			<div class="world5">
+				<div class="row">
+					<div class="col-md-6  col-xs-6">
+						<br /><br /><br />
+						<h2>享受在 Qualcomm 工作的更多理由</h2>
+						<p>我们的福利不仅非常有竞争力，而且很全面，可为您和您的家人提供大量保护和保障，并提高您的生活品质。 您会发现 Qualcomm 的福利绝对首屈一指。</p>
+					</div>
+					<div class="col-md-6 col-xs-6">
+						<img src="../img/2company4.jpg" />
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="box6">
+			<div class="world6">
+				<p><br /><br />
+				在我们的全球网站上了解关于 Qualcomm 招聘的更多信息
+				</p>
+				<div class="world62">
+					<button type="button" class="btn" id="btn">
+						<a href="#">访问全球网站</a>
+						
+					</button>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div class="box">
+				<div class="logo">
+					<img src="../img/logo.PNG" />
+				</div>
+				<div class="">
+
+				</div>
+				<div class="">
+
+				</div>
+			</div>
+			<div class="box">
+				<div class="">
+					<a href="#" style="color: #7f8082;">关于Qualcomm</a>
+					<a href="../html/companyagency.html" style="color: #7f8082;">联系我们</a>
+					<a href="#" style="color: #7f8082;">招贤纳士</a>
+				</div>
+				<div class="rightwz">
+					<a href="#">使用条款</a>
+					<a href="#">隐私</a>
+					<a href="#">cookie政策</a>
+				</div>
+
+			</div>
+			<div class="box">
+				<p style="font-size: 12px; color: #bbc0c8;">
+					©2019 Qualcomm Technologies，Inc。和/或其附属公司。
+					<br /><br /> 对“Qualcomm”的引用可能适用于Qualcomm Incorporated，或Qualcomm公司结构内的子公司或业务部门。
+					<br /> 高通公司包括高通公司的许可业务，QTL以及绝大部分专利组合。Qualcomm Technologies，Inc。是Qualcomm Incorporated的全资子公司，与其子公司一起经营高通公司的所有工程，研发和功能，以及几乎所有的产品和服务业务。本页引用的Qualcomm产品是Qualcomm Technologies，Inc。和/或其子公司的产品。
+					<br /> 截至特定日期的材料（包括但不限于新闻稿，演示文稿，博客文章和网络广播）可能已被后续事件或披露所取代。
+					<br /> 这些材料中的任何内容均不是出售此处引用的任何组件或设备的要约。
+				</p>
+			</div>
+			<div class="totop">T</div>
+		</footer>
+		
+		<button onclick="returnTop()" id="btnTop" title="">
+			<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+		</button>
+		
+		<script src="../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/pubJS.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onscroll = function() {
+				scrollFunction()
+			};
+
+			function scrollFunction() {
+				console.log(121);
+				if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					document.getElementById("btnTop").style.display = "block";
+				} else {
+					document.getElementById("btnTop").style.display = "none";
+				}
+			}
+
+			function returnTop() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
+	</body>
+
+</html>

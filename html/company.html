@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/pubCss.css" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			html,
+			body {
+				min-width: 1200px;
+			}
+			
+			.box1 {
+				width: 100%;
+				height: 590px;
+				background-image: url(../img/1company1.jpg);
+				background-repeat: repeat;
+			}
+			
+			.box1 .companyone {
+				width: 1200px;
+				height: 590px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			
+			.box1 .companyone img {
+				width: 225px;
+				height: 260px;
+				margin-top: 160px
+			}
+			
+			.box1 .companyone p {
+				margin: 0 auto;
+				font-size: 60px;
+				font-weight: bold;
+				font-family: "微软雅黑";
+				color: #fff;
+			}
+			
+			.box2 {
+				width: 100%;
+				height: 320px;
+				background: linear-gradient(to right, #033b67, #8e297c);
+			}
+			
+			.box2 .companytwo {
+				width: 780px;
+				height: 320px;
+				margin: 0 auto;
+			}
+			
+			.box2 .companytwo2 {
+				width: 780px;
+				height: 100px;
+				padding-top: 110px;
+			}
+			
+			.box2 .companytwo .companytwo2 p {
+				font-size: 20px;
+				font-weight: bold;
+				color: #fff;
+				text-align: center;
+			}
+			
+			.box3 {
+				width: 100%;
+				height: 470px;
+				background: #fafafa;
+			}
+			
+			.box3 .companythr {
+				width: 100%;
+				height: 270px;
+			}
+			
+			.box3 .companythr .companythr2 {
+				width: 780px;
+				height: 270px;
+				margin: 0 auto;
+				padding-top: 100px;
+			}
+			
+			.box3 .companythr .companythr2 .wz2 {
+				height: 50px;
+				margin-bottom: 10px;
+				text-align: center;
+			}
+			
+			.box3 .companythr .companythr2 .wz2 p {
+				font-size: 50px;
+				color: #000;
+			}
+			
+			.box3 .companythr .companythr2 .wz3 {
+				height: 200px;
+				margin-top: 10px;
+				text-align: center;
+				padding-top: 20px;
+			}
+			
+			.box3 .companythr .companythr2 .wz3 li {
+				font-size: 18px;
+				color: #838688;
+				list-style: none;
+				font-family: "微软雅黑";
+			}
+			
+			.box4 {
+				width: 100%;
+				height: 650px;
+			}
+			
+			.box4 .companyfor {
+				width: 100%;
+				height: 450px;
+				padding-top: 100px;
+			}
+			
+			.box4 .companyfor .companyfor2 {
+				width: 1200px;
+				height: 450px;
+				margin: 0 auto;
+			}
+			
+			.box4 .imgthr {
+				width: 600px;
+				height: 450px;
+				float: left;
+			}
+			
+			.box4 .imgthr img {
+				padding-left: 80px;
+			}
+			
+			.box4 .wz4 {
+				width: 600px;
+				height: 450px;
+				float: left;
+			}
+			
+			.box4 .wz4 .wz41 {
+				width: 580px;
+				height: 50px;
+				padding-top: 200px;
+			}
+			
+			.box4 .wz4 .wz41 p {
+				font-size: 50px;
+				font-family: "微软雅黑";
+				letter-spacing: 0.1em;
+			}
+			
+			.box4 .wz4 .wz42 {
+				width: 580px;
+				height: 50px;
+				padding-top: 70px;
+			}
+			
+			.box4 .wz4 .wz42 li {
+				font-size: 20px;
+				color: #7f7a7d;
+				list-style: none;
+				font-family: "宋体";
+			}
+			
+			.box5 {
+				width: 100%;
+				height: 665px;
+				background: #fafafa;
+			}
+			
+			.box5 .companyfiv {
+				width: 100%;
+				height: 465px;
+				padding-top: 100px;
+			}
+			
+			.box5 .companyfiv .companyfiv2 {
+				width: 900px;
+				height: 100%;
+				margin: 0 auto;
+			}
+			
+			.box5 .companyfiv .companyfiv2 .wz5 {
+				width: 800px;
+				height: 145px;
+				margin: 0 auto;
+			}
+			
+			.box5 .companyfiv .companyfiv2 .wz5 .wz51 {
+				width: 100%;
+				height: 70px;
+			}
+			
+			.box5 .companyfiv .companyfiv2 .wz5 .wz51 h2 {
+				font-size: 50px;
+				text-align: center;
+				font-family: "黑体";
+			}
+			
+			.box5 .companyfiv .companyfiv2 .wz5 .wz52 {
+				width: 100%;
+				height: 75px;
+			}
+			
+			.box5 .companyfiv .companyfiv2 .wz5 .wz52 p {
+				font-size: 22px;
+				text-align: center;
+				font-family: "黑体";
+			}
+			
+			.box5 .companyfiv .companyfiv2 .imgfor {
+				width: 890px;
+				height: 275px;
+				margin: 0 auto;
+				padding-top: 70px;
+			}
+			
+			.box5 .companyfiv .companyfiv2 .imgfor img {
+				width: 890px;
+				height: 275px;
+			}
+			
+			.box6 {
+				width: 100%;
+				height: 450px;
+			}
+			
+			.box6 .companysix {
+				width: 1200px;
+				height: 100%;
+				margin: 0 auto;
+			}
+			
+			.box6 .companysix .companysix2 {
+				width: 800px;
+				height: 262px;
+				margin: 0 auto;
+				padding-top: 100px;
+			}
+			
+			.box6 .companysix .companysix2 .wz61 {
+				width: 780px;
+				height: 200px;
+			}
+			
+			.box6 .companysix .companysix2 .wz61 h2 {
+				font-size: 50px;
+				font-family: "黑体";
+				text-align: center;
+				padding-top: 40px;
+			}
+			
+			.box6 .companysix .companysix2 .wz62 {
+				width: 780px;
+				height: 62px;
+			}
+			
+			.box6 .companysix .companysix2 .wz62 p {
+				font-size: 20px;
+				font-family: "黑体";
+				text-align: center;
+			}
+			
+			.box7 {
+				width: 100%;
+				height: auto;
+			}
+			
+			.box7 .row {
+				width: 1200px;
+				height: 300px;
+				margin: 0 auto;
+			}
+			
+			.box7 .row .col-md-4 {
+				border: 1px solid #e6e8e9;
+			}
+			
+			.box7 .row .cod4 {
+				width: 100%;
+				height: 193px;
+				margin: 0 auto;
+				padding-top: 20px;
+			}
+			
+			.box7 .row .cod4 h2 {
+				font-size: 24px;
+				font-weight: bold;
+				font-family: "黑体";
+			}
+			
+			.box7 .row .cod4 p {
+				font-size: 18px;
+				color: #7f7a8d;
+				letter-spacing: 0.1em;
+			}
+			
+			.box7 .row .cod4 a {
+				font-size: 18px;
+				color: #3253dc;
+				font-weight: bold;
+			}
+			
+			.box8 {
+				width: 100%;
+				height: 480px;
+				margin: 0 auto;
+				background: #fafafa;
+			}
+			
+			.box8 .companyeig {
+				width: 1200px;
+				padding-top: 40px;
+				margin: 0 auto;
+			}
+			
+			.box8 .companyeig .col-md-4 {
+				padding-top: 80px;
+			}
+			
+			.box8 .companyeig h2 {
+				font-size: 50px;
+				font-family: "黑体";
+			}
+			
+			.box8 .companyeig p {
+				font-size: 20px;
+				color: #3253dc;
+				font-weight: bold;
+			}
+			
+			.box8 .companyeig img {
+				width: 20rem;
+				height: 20rem;
+				padding-top: 10px;
+			}
+			
+			footer {
+				width: 100%;
+				border-top: 1px solid #666;
+			}
+			
+			footer>.box {
+				margin-top: 32px;
+			}
+			
+			footer>.box .rightwz a {
+				color: #7f8082;
+				margin-right: 20px;
+				font-size: 14px;
+			}
+			
+			#btnTop {
+				display: none;
+				position: fixed;
+				bottom: 20px;
+				right: 30px;
+				z-index: 99;
+				border: none;
+				outline: none;
+				background-color: #f3f3f3;
+				color: #000;
+				cursor: pointer;
+				padding: 15px;
+				border-radius: 50%;
+			}
+			
+			#btnTop:hover {
+				background-color: #f3f3f3;
+			}
+			
+			.row {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="box">
+				<div class="menu">
+					<img src="../img/menu.PNG" id="menb" style="height: 26px;width: 26px;" data-zt="0" />
+					<div>
+						<div class="melist">
+							<div class="nav">
+								<a href="../html/products.html">产品</a>
+								<a href="../html/one.html">解决方案</a>
+								<a href="../index.html">支持</a>
+								<a href="../html/company.html">公司</a>
+							</div>
+
+						</div>
+						<div class="log">
+							<h4><img src="../img/login.PNG" />登录您的Qualcomm帐户。</h4>
+							<a href="../html/login.html" class="btn" id="logbn">登录</a>
+							<p>没有帐户？ <a href="../html/companyregister.html">创建一个</a></p>
+								
+						</div>
+					</div>
+				</div>
+				<div class="logo">
+					<img src="../img/XM logo.PNG" />
+				</div>
+				<div class="nav">
+					<a href="../html/products.html">产品</a>
+					<a href="../html/one.html">解决方案</a>
+					<a href="../index.html">支持</a>
+					<a href="../html/company.html">公司</a>
+				</div>
+				<div class="pop">
+					<div class="log">
+						<img src="../img/login.PNG" id="login" style="cursor:pointer;" data-zt = "0" />
+						<div id="logfr">
+							<h4 style="font-size: 20px;">登录您的Qualcomm帐户。</h4>
+							<a href="../html/login.html" class="btn" id="logbn">登录</a>
+							<p>没有帐户？ <a href="../html/companyregister.html">创建一个</a></p>
+						</div>
+					</div>
+					<div style="cursor:pointer;">
+						<img src="../img/find.PNG" id="findbtn" />
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="box1">
+			<div class="companyone">
+				<div class="imgtwo">
+					<img src="../img/1company2.jpg" />
+				</div>
+				<div class="wz1">
+					<p>公司概况</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="box2">
+			<div class="companytwo">
+				<div class="companytwo2">
+					<p>
+						Qualcomm® 最初起源于一个想法、 一份协议、 一项协定。 1985 年，七位有识之士聚集在圣地亚哥的一个小房间内共商大计，决定创建“quality communications”。如今，在这个小房间内诞生的公司在全球 40 多个国家和地区设立了 170 多个办事处， 但当初的想法却一直延续至今。
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="box3">
+			<div class="companythr">
+				<div class="companythr2">
+					<div class="wz2">
+						<p>关于 Qualcomm</p>
+					</div>
+					<div class="wz3">
+						<li>Qualcomm 发明的基础科技改变了世界连接与沟通的方式。把手机连接到互联网，我们的发明开启了移动互联时代。今天，我们发明的基础科技催生了那些改变人们生活的产品、体验和行业。Qualcomm 引领世界迈向 5G，我们看到新一轮蜂窝技术的变革将激发万物智能互连的新时代，并在网联汽车、远程健康医疗服务和物联网领域创造全新机遇。Qualcomm Incorporated 包括技术许可业务（QTL）和我们绝大部分的专利组合。Qualcomm Technologies, Inc.（QTI）是 Qualcomm Incorporated 的全资子公司，与其子公司一起运营我们所有的工程、研发活动以及所有产品和 服务业务，其中包括半导体业务 QCT。</li>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="box4">
+			<div class="companyfor">
+				<div class="companyfor2">
+					<div class="imgthr">
+						<img src="../img/1company3.jpg" />
+					</div>
+					<div class="wz4">
+						<div class="wz41">
+							<p>以创新为核心</p>
+						</div>
+						<div class="wz42">
+							<li>
+								公司的多个部门除研发大量的新技术外，他们还拥有一个共同的目标， 即致力于发明新的方法来改进全球通信技术。
+							</li>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="box5">
+			<div class="companyfiv">
+				<div class="companyfiv2">
+					<div class="wz5">
+						<div class="wz51">
+							<h2>
+								数十亿甚至数万亿次使用
+							</h2>
+						</div>
+						<div class="wz52">
+							<p>
+								这是每天全世界使用Qualcomm 设备的次数， 这些设备可能是您口袋里的智能手机、咖啡桌上的平板电脑、公文包中的无线调制解调器......甚至可能是您车内的导航系统或是系在您胸前的运动摄影机。
+							</p>
+						</div>
+					</div>
+					<div class="imgfor">
+						<img src="../img/1company4.jpg" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="box6">
+			<div class="companysix">
+				<div class="companysix2">
+					<div class="wz61">
+						<h2>我们经常会做一些很多人认为不可能的事</h2>
+					</div>
+					<div class="wz62">
+						<p>
+							Qualcomm 是谁？Qualcomm 就是工程师、科学家和企业战略家的组合。 我们来自不同国家和地区，说着不同的语言， 我们拥有不同的文化背景和独特的视角。 然而我们都拥有一个共同的目标——不断取得移动技术的突破。
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="f">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="cod4">
+							<div class="codwz">
+								<h2>招贤纳士</h2>
+								<p>加入 Qualcomm，您将有机会参与研发改变世界的新技术。</p>
+								<p>
+									<a href="../html/companyworld.html">了解更多 ></a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="cod4">
+							<div class="codwz">
+								<h2>领导层</h2>
+								<p>公司的管理层由一队充满愿景的资深企业管理者和技术专家组成， 他们对移动产业的真知灼见是推动公司发展的关键因素。</p>
+								<p>
+									<a href="#">了解更多 ></a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="cod4">
+							<div class="codwz">
+								<h2>Qualcomm®无线关爱</h2>
+								<p>Qualcomm® 无线关爱™ 将继续投资于科技研发，力图为更多人群创造机遇。</p>
+								<p>
+									<a href="#">了解更多 ></a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="box8">
+			<div class="companyeig">
+				<div class="row text-center">
+					<div class="col-md-6 pull-left" style="width: auto;">
+						<h2>
+							联系我们
+						</h2>
+						<p>
+							<a href="companyworld.html">查找Qualcomm全球联系信息 ></a>
+						</p>
+					</div>
+					<div class="col-md-6 pull-right" style="width: auto;">
+						<img src="../img/1company5.jpg" />
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<footer>
+			<div class="box">
+				<div class="logo">
+					<img src="../img/logo.PNG" />
+				</div>
+				<div class="">
+
+				</div>
+				<div class="">
+
+				</div>
+			</div>
+			<div class="box">
+				<div class="">
+					<a href="#" style="color: #7f8082;">关于Qualcomm</a>
+					<a href="../html/companyagency.html" style="color: #7f8082;">联系我们</a>
+					<a href="#" style="color: #7f8082;">招贤纳士</a>
+				</div>
+				<div class="rightwz">
+					<a href="#">使用条款</a>
+					<a href="#">隐私</a>
+					<a href="#">cookie政策</a>
+				</div>
+
+			</div>
+			<div class="box">
+				<p style="font-size: 12px; color: #bbc0c8;">
+					©2019 Qualcomm Technologies，Inc。和/或其附属公司。
+					<br /><br /> 对“Qualcomm”的引用可能适用于Qualcomm Incorporated，或Qualcomm公司结构内的子公司或业务部门。
+					<br /> 高通公司包括高通公司的许可业务，QTL以及绝大部分专利组合。Qualcomm Technologies，Inc。是Qualcomm Incorporated的全资子公司，与其子公司一起经营高通公司的所有工程，研发和功能，以及几乎所有的产品和服务业务。本页引用的Qualcomm产品是Qualcomm Technologies，Inc。和/或其子公司的产品。
+					<br /> 截至特定日期的材料（包括但不限于新闻稿，演示文稿，博客文章和网络广播）可能已被后续事件或披露所取代。
+					<br /> 这些材料中的任何内容均不是出售此处引用的任何组件或设备的要约。
+				</p>
+			</div>
+			<div class="totop">T</div>
+		</footer>
+
+		<button onclick="returnTop()" id="btnTop" title="">
+			<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+		</button>
+
+		<script src="../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/pubJS.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onscroll = function() {
+				scrollFunction()
+			};
+
+			function scrollFunction() {
+				console.log(121);
+				if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					document.getElementById("btnTop").style.display = "block";
+				} else {
+					document.getElementById("btnTop").style.display = "none";
+				}
+			}
+
+			function returnTop() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
+	</body>
+
+</html>

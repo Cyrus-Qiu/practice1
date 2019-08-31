@@ -1,0 +1,149 @@
+html,body{
+	min-width: 1200px;
+}
+.header{
+	box-shadow:5px 5px 30px #D5D5D5;
+	height: 234px;
+	position: absolute;
+	top: 0;
+	min-width: 1200px;
+}
+.header>div{
+	padding: 48px;	
+	width: 100%;
+}
+.header>div>div{
+	display: inline-block;
+	font-size: 48px;
+	font-family:  arial;
+	
+}
+.content{
+	
+	
+	margin-left: 130px;
+	margin-right: 130px;
+	margin-top: 280px;
+	}
+
+
+.con2 p{
+font-size: 17px;	
+padding-top: 10px;
+}
+.span4{
+	margin-top:80px;
+}
+
+.con3{
+	margin-top: 100px;
+}
+
+
+.con3 img{
+	height: 130px;
+	width: 130px;
+	
+}
+
+
+.con3>.con3Left{
+	width: 40%;
+	display: inline-block;
+	padding-left: 250px;
+	top: 0px;
+	position: relative;
+	top: -80px;
+	
+	
+}
+.con3>.con3Right{
+	display: inline-block;
+	
+	width: 40%;
+}
+.con3>.con3Right>p{
+	font-size: 18px;
+	margin-top: 50px;
+}
+	.con3Right>div>span{
+				width: 300px;
+				height: 50px;
+				background: #3253dc;
+				color: #FFFFFF;
+				border-radius: 30px;
+				padding: 15px 50px;
+				
+			}
+			
+.sspan4,.sspan8{
+	padding: 50px;
+	font-size: 12px;
+	color: rgba(0 ,0, 0,0.8);
+}
+.sspan4>li{
+	margin-top: 30px;
+}
+.sspan8>table{
+	
+	border-collapse: separate;
+	border-spacing: 50px 50px;
+	
+	
+	
+}
+.sspan8>table>tbody th{
+	left: 0;
+	float: left;
+	
+	
+}
+
+				.tableLeft {
+				
+					width: 15%;
+				
+					
+					
+				}
+				.tableLeft td{
+					background-image: url(../img/products/xiaolongtubiao.PNG);
+					background-size: 50px;
+					background-repeat: no-repeat;
+					background-position-x: 5%;
+					background-position-y: 15%;
+					bottom: 20px;
+					height: 140px;
+					
+				}
+				.tableRight{
+					width: 500px;
+					display: inline-block;
+					overflow: scroll;
+					padding: 0;
+					
+				}
+				.contentTaber{
+				margin-top: 100px;
+				
+				}
+				.con5 caption{
+					padding:18px 0;
+				}
+				.contentTaber .tableRight tr{
+					
+				}
+				.taberRight>table{
+					width: 1260px;
+					
+					overflow: hidden;
+				}
+				.taberRight th{
+					width: 300px;
+				
+				}
+				.taberRight td{
+					width: 300px;
+					height: 140px;
+					overflow: hidden;
+				}
