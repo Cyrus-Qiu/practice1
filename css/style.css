@@ -106,6 +106,11 @@ html,body{
     border-color: blueviolet;
     margin-left: 10px;
 	float: left;
+	transition: all 0.5s;
+}
+.sikuai>.row>.col-md-4>.liaojie span:hover{
+	margin-left: 20px;
+	transition: all 0.5s;
 }
 .sikuai>.row>.col-md-4>.ljgd{
 	width: 370px;
@@ -179,6 +184,7 @@ html,body{
 	height: 388px;
 	background: #4a5a74;
 	padding-top: 100px;
+	margin-top: 100px;
 }
 .footer-a2{
 	text-align: center;
@@ -204,7 +210,9 @@ html,body{
 	border-radius: 20px;
 	cursor: pointer;
 }
-
+.footer-a2 p:hover{
+	background: #303c4c;
+}
 
 footer{
 	width: 100%;

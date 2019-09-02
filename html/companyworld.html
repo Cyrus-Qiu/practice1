@@ -513,19 +513,19 @@
 				scrollFunction()
 			};
 
-			function scrollFunction() {
-				console.log(121);
-				if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-					document.getElementById("btnTop").style.display = "block";
-				} else {
-					document.getElementById("btnTop").style.display = "none";
-				}
-			}
-
-			function returnTop() {
-				document.body.scrollTop = 0;
-				document.documentElement.scrollTop = 0;
-			}
+			$(function() {
+				$(window).scroll(function(){
+					console.log($(window).scrollTop());
+					if($(window).scrollTop()>200){
+						$("#btnTop").fadeIn();
+					}else{
+					$("#btnTop").fadeOut();
+					}					
+				})
+				$("#btnTop").click(function(){
+					$("html,body").animate({'scrollTop':'0px'},500);
+				})
+			});
 		</script>
 	</body>
 

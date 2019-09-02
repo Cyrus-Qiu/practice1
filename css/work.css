@@ -271,6 +271,16 @@ element.style{
 	color: blue;
 	font-size: 16px;
 	font-weight: 600;
+	text-decoration: none;
+}
+.e2-wz img{
+	width: 2.5rem;
+	height: 2.5rem;
+	transition: all 1s;
+}
+.e2-wz img:hover{
+	margin-left: 10px;
+	transition: all 1s;
 }
 .box-f1{
 	display: block;

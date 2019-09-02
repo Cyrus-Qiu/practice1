@@ -174,11 +174,26 @@
 			</div>
 			<div class="totop">T</div>
 		</footer>
+		<button onclick="returnTop()" id="btnTop" title="">
+			<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+		</button>
 		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="../js/jquery-2.1.0.js"></script>
 		<script src="../js/pubJS.js" type="text/javascript" charset="utf-8"></script>
-
 		<script type="text/javascript">
+			$(function() {
+				$(window).scroll(function(){
+					console.log($(window).scrollTop());
+					if($(window).scrollTop()>200){
+						$("#btnTop").fadeIn();
+					}else{
+					$("#btnTop").fadeOut();
+					}					
+				})
+				$("#btnTop").click(function(){
+					$("html,body").animate({'scrollTop':'0px'},500);
+				})
+			});
 		</script>
 	</body>
 

@@ -3,10 +3,10 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title></title> 
+		<title></title>
 		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css" />
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="../css/pubCss.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/pubCss.css" />
 		<link rel="stylesheet" type="text/css" href="../css/work.css" />
 		<style type="text/css">
 			.box-d2 .swiper-container {
@@ -20,7 +20,7 @@
 		<header>
 			<div class="box">
 				<div class="menu">
-					<img src="../img/menu.PNG" id="menb" style="height: 26px;width: 26px;" data-zt = "0"/>
+					<img src="../img/menu.PNG" id="menb" style="height: 26px;width: 26px;" data-zt="0" />
 					<div>
 						<div class="melist">
 							<div class="nav">
@@ -29,13 +29,15 @@
 								<a href="../html/index.html">支持</a>
 								<a href="../html/company.html">公司</a>
 							</div>
-							
+
 						</div>
 						<div class="log">
 							<h4><img src="../img/login.PNG" />登录您的Qualcomm帐户。</h4>
 							<a href="../html/login.html" class="btn" id="logbn">登录</a>
-							<p>没有帐户？ <a href="../html/companyregister.html">创建一个</a></p>
-								
+							<p>没有帐户？
+								<a href="../html/companyregister.html">创建一个</a>
+							</p>
+
 						</div>
 					</div>
 				</div>
@@ -50,11 +52,13 @@
 				</div>
 				<div class="pop">
 					<div class="log">
-						<img src="../img/login.PNG" id="login" style="cursor:pointer;" data-zt = "0" />
+						<img src="../img/login.PNG" id="login" style="cursor:pointer;" data-zt="0" />
 						<div id="logfr">
 							<h4 style="font-size: 20px;">登录您的Qualcomm帐户。</h4>
 							<a href="../html/login.html" class="btn" id="logbn">登录</a>
-							<p>没有帐户？ <a href="../html/companyregister.html">创建一个</a></p>
+							<p>没有帐户？
+								<a href="../html/companyregister.html">创建一个</a>
+							</p>
 						</div>
 					</div>
 					<div style="cursor:pointer;">
@@ -75,7 +79,7 @@
 				<div class="box-wz1">
 					<h2>增加与物联网解决方案的连接性。</h2>
 					<p>随着我们迈向物联网（IoT）的未来，Qualcomm Technologies正在利用智能机构，智能家居和智能城市领域的优化平台，帮助客户更快，更经济地实现产品商业化。我们在连接和计算方面的规模和专业知识使我们处于一个独特的位置，可以发明和提供物联网所需的技术 - 无论是现在还是将来。</p>
-				</div>				
+				</div>
 			</div>
 			<div class="box-a1">
 				<div class="pull-left">
@@ -163,7 +167,8 @@
 					<div class="e2-wz">
 						<h2>播放状态报告</h2>
 						<p>本报告着眼于无线设备到设备和网络音频的现状，消费者音频趋势，购买决策和对车内收听的态度。它确定了关键的消费者期望，痛点和购买驱动因素。</p>
-						<a href="../html/there.html">下载报告 ></a>
+						<a href="../html/there.html">下载报告</a>
+						<a href="#"><img src="../img/大于.png" /></a>
 					</div>
 				</div>
 			</div>
@@ -192,7 +197,7 @@
 				</div>
 			</div>
 		</tbody>
-		
+
 		<footer>
 			<div class="box">
 				<div class="logo">
@@ -234,7 +239,7 @@
 		<button onclick="returnTop()" id="btnTop" title="">
 			<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
 		</button>
-		
+
 		<script src="../js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
@@ -245,37 +250,44 @@
 				scrollbarHide: false,
 				scrollbarDraggable: true,
 				slidesPerView: 3,
-			}); 
+			});
 			var mySwiper = new Swiper('.box-g1 .swiper-container', {
 				effect: 'coverflow',
 				slidesPerView: 4,
 				centeredSlides: true,
 				coverflow: {
 					rotate: 30,
-            		stretch: 0,
-            		depth: 60,
-            		modifier: 2,
-            		slideShadows : true
+					stretch: 0,
+					depth: 60,
+					modifier: 2,
+					slideShadows: true
 				}
 			})
 			window.onscroll = function() {
 				scrollFunction()
 			};
 
-			function scrollFunction() {
-				console.log(121);
-				if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-					document.getElementById("btnTop").style.display = "block";
-				} else {
-					document.getElementById("btnTop").style.display = "none";
-				}
-			}
-
-			function returnTop() {
-				document.body.scrollTop = 0;
-				document.documentElement.scrollTop = 0;
-			}
-
+			//			function scrollFunction() {
+			//				console.log(121);
+			//				if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			//					document.getElementById("btnTop").style.display = "block";
+			//				} else {
+			//					document.getElementById("btnTop").style.display = "none";
+			//				}
+			//			}
+			$(function() {
+				$(window).scroll(function(){
+					console.log($(window).scrollTop());
+					if($(window).scrollTop()>200){
+						$("#btnTop").fadeIn();
+					}else{
+					$("#btnTop").fadeOut();
+					}
+				})
+				$("#btnTop").click(function(){
+					$("html,body").animate({'scrollTop':'0px'},500);
+				})
+			});
 		</script>
 	</body>
 

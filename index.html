@@ -159,7 +159,7 @@
 						</div>
 					</div>
 					<div class="newsbox">
-						<img src="img/index/news2.png" style="height: 210px;"/>
+						<img src="img/news2.png" style="height: 210px;"/>
 						<div class="" style="padding: 20px;">
 							<div class="newslb">
 								<img src="img/XMbz.PNG"/>
@@ -224,10 +224,27 @@
 			</div>
 			<div class="totop">T</div>
 		</footer>
-
+		<button onclick="returnTop()" id="btnTop" title="">
+			<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+		</button>
 		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript" src="js/jquery.mousewheel.js" ></script>
 		<script src="js/new_file.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(window).scroll(function(){
+					console.log($(window).scrollTop());
+					if($(window).scrollTop()>200){
+						$("#btnTop").fadeIn();
+					}else{
+					$("#btnTop").fadeOut();
+					}					
+				})
+				$("#btnTop").click(function(){
+					$("html,body").animate({'scrollTop':'0px'},500);
+				})
+			});
+		</script>
 	</body>
 
 </html>
