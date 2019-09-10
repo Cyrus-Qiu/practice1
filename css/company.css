@@ -1,0 +1,374 @@
+* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			html,body {
+				min-width: 1200px;
+			}
+			
+			.box1 {
+				width: 100%;
+				height: 590px;
+				background-image: url(../img/1company1.jpg);
+				background-repeat: repeat;
+			}
+			
+			.box1 .companyone {
+				width: 1200px;
+				height: 590px;
+				margin: 0 auto;
+				text-align: center;
+			}
+			
+			.box1 .companyone img {
+				width: 225px;
+				height: 260px;
+				margin-top: 160px
+			}
+			
+			.box1 .companyone p {
+				margin: 0 auto;
+				font-size: 60px;
+				font-weight: bold;
+				font-family: "微软雅黑";
+				color: #fff;
+			}
+			
+			.box2 {
+				width: 100%;
+				height: 320px;
+				background: linear-gradient(to right, #033b67, #8e297c);
+			}
+			
+			.box2 .companytwo {
+				width: 780px;
+				height: 320px;
+				margin: 0 auto;
+			}
+			
+			.box2 .companytwo2 {
+				width: 780px;
+				height: 100px;
+				padding-top: 110px;
+			}
+			
+			.box2 .companytwo .companytwo2 p {
+				font-size: 20px;
+				font-weight: bold;
+				color: #fff;
+				text-align: center;
+			}
+			
+			.box3 {
+				width: 100%;
+				height: 470px;
+				background: #fafafa;
+			}
+			
+			.box3 .companythr {
+				width: 100%;
+				height: 270px;
+			}
+			
+			.box3 .companythr .companythr2 {
+				width: 780px;
+				height: 270px;
+				margin: 0 auto;
+				padding-top: 100px;
+			}
+			
+			.box3 .companythr .companythr2 .wz2 {
+				height: 50px;
+				margin-bottom: 10px;
+				text-align: center;
+			}
+			
+			.box3 .companythr .companythr2 .wz2 p {
+				font-size: 50px;
+				color: #000;
+			}
+			
+			.box3 .companythr .companythr2 .wz3 {
+				height: 200px;
+				margin-top: 10px;
+				text-align: center;
+				padding-top: 20px;
+			}
+			
+			.box3 .companythr .companythr2 .wz3 li {
+				font-size: 18px;
+				color: #838688;
+				list-style: none;
+				font-family: "微软雅黑";
+			}
+			
+			.box4 {
+				width: 100%;
+				height: 650px;
+			}
+			
+			.box4 .companyfor {
+				width: 100%;
+				height: 450px;
+				padding-top: 100px;
+			}
+			
+			.box4 .companyfor .companyfor2 {
+				width: 1200px;
+				height: 450px;
+				margin: 0 auto;
+			}
+			
+			.box4 .imgthr {
+				width: 600px;
+				height: 450px;
+				float: left;
+			}
+			
+			.box4 .imgthr img {
+				padding-left: 80px;
+			}
+			
+			.box4 .wz4 {
+				width: 600px;
+				height: 450px;
+				float: left;
+			}
+			
+			.box4 .wz4 .wz41 {
+				width: 580px;
+				height: 50px;
+				padding-top: 200px;
+			}
+			
+			.box4 .wz4 .wz41 p {
+				font-size: 50px;
+				font-family: "微软雅黑";
+				letter-spacing: 0.1em;
+			}
+			
+			.box4 .wz4 .wz42 {
+				width: 580px;
+				height: 50px;
+				padding-top: 70px;
+			}
+			
+			.box4 .wz4 .wz42 li {
+				font-size: 20px;
+				color: #7f7a7d;
+				list-style: none;
+				font-family: "宋体";
+			}
+			
+			.box5 {
+				width: 100%;
+				height: 665px;
+				background: #fafafa;
+			}
+			
+			.box5 .companyfiv {
+				width: 100%;
+				height: 465px;
+				padding-top: 100px;
+			}
+			
+			.box5 .companyfiv .companyfiv2 {
+				width: 900px;
+				height: 100%;
+				margin: 0 auto;
+			}
+			
+			.box5 .companyfiv .companyfiv2 .wz5 {
+				width: 800px;
+				height: 145px;
+				margin: 0 auto;
+			}
+			
+			.box5 .companyfiv .companyfiv2 .wz5 .wz51 {
+				width: 100%;
+				height: 70px;
+			}
+			
+			.box5 .companyfiv .companyfiv2 .wz5 .wz51 h2 {
+				font-size: 50px;
+				text-align: center;
+				font-family: "黑体";
+			}
+			
+			.box5 .companyfiv .companyfiv2 .wz5 .wz52 {
+				width: 100%;
+				height: 75px;
+			}
+			
+			.box5 .companyfiv .companyfiv2 .wz5 .wz52 p {
+				font-size: 22px;
+				text-align: center;
+				font-family: "黑体";
+			}
+			
+			.box5 .companyfiv .companyfiv2 .imgfor {
+				width: 890px;
+				height: 275px;
+				margin: 0 auto;
+				padding-top: 70px;
+			}
+			
+			.box5 .companyfiv .companyfiv2 .imgfor img {
+				width: 890px;
+				height: 275px;
+			}
+			
+			.box6 {
+				width: 100%;
+				height: 450px;
+			}
+			
+			.box6 .companysix {
+				width: 1200px;
+				height: 100%;
+				margin: 0 auto;
+			}
+			
+			.box6 .companysix .companysix2 {
+				width: 800px;
+				height: 262px;
+				margin: 0 auto;
+				padding-top: 100px;
+			}
+			
+			.box6 .companysix .companysix2 .wz61 {
+				width: 780px;
+				height: 200px;
+			}
+			
+			.box6 .companysix .companysix2 .wz61 h2 {
+				font-size: 50px;
+				font-family: "黑体";
+				text-align: center;
+				padding-top: 40px;
+			}
+			
+			.box6 .companysix .companysix2 .wz62 {
+				width: 780px;
+				height: 62px;
+			}
+			
+			.box6 .companysix .companysix2 .wz62 p {
+				font-size: 20px;
+				font-family: "黑体";
+				text-align: center;
+			}
+			
+			.box7 {
+				width: 100%;
+				height: auto;
+			}
+			
+			.box7 .row {
+				width: 1200px;
+				height: 300px;
+				margin: 0 auto;
+			}
+			
+			.box7 .row .col-md-4 {
+				border: 1px solid #e6e8e9;
+			}
+			
+			.box7 .row .cod4 {
+				width: 100%;
+				height: 193px;
+				margin: 0 auto;
+				padding-top: 20px;
+			}
+			
+			.box7 .row .cod4 h2 {
+				font-size: 24px;
+				font-weight: bold;
+				font-family: "黑体";
+			}
+			
+			.box7 .row .cod4 p {
+				font-size: 18px;
+				color: #7f7a8d;
+				letter-spacing: 0.1em;
+			}
+			
+			.box7 .row .cod4 a {
+				font-size: 18px;
+				color: #3253dc;
+				font-weight: bold;
+			}
+			
+			.box8 {
+				width: 100%;
+				height: 480px;
+				margin: 0 auto;
+				background: #fafafa;
+			}
+			
+			.box8 .companyeig {
+				width: 1200px;
+				padding-top: 40px;
+				margin: 0 auto;
+			}
+			
+			.box8 .companyeig .col-md-4 {
+				padding-top: 80px;
+			}
+			
+			.box8 .companyeig h2 {
+				font-size: 50px;
+				font-family: "黑体";
+			}
+			
+			.box8 .companyeig p {
+				font-size: 20px;
+				color: #3253dc;
+				font-weight: bold;
+			}
+			
+			.box8 .companyeig img {
+				width: 20rem;
+				height: 20rem;
+				padding-top: 10px;
+			}
+			
+			footer {
+				width: 100%;
+				border-top: 1px solid #666;
+			}
+			
+			footer>.box {
+				margin-top: 32px;
+			}
+			
+			footer>.box .rightwz a {
+				color: #7f8082;
+				margin-right: 20px;
+				font-size: 14px;
+			}
+			
+			#btnTop {
+				display: none;
+				position: fixed;
+				bottom: 20px;
+				right: 30px;
+				z-index: 99;
+				border: none;
+				outline: none;
+				background-color: #f3f3f3;
+				color: #000;
+				cursor: pointer;
+				padding: 15px;
+				border-radius: 50%;
+			}
+			
+			#btnTop:hover {
+				background-color: #f3f3f3;
+			}
+			
+			.row {
+				margin-left: 0;
+				margin-right: 0;
+			}
